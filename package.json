@@ -1,0 +1,17 @@
+{
+  "name": "keep-and-loose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "open": "^6.2.0",
+    "pretty": "^2.0.0",
+    "pug": "^2.0.3",
+    "yargs": "^13.2.2"
+  }
+}

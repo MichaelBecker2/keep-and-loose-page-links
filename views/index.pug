@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Keep and loose page links
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css")
+        style.
+            ol > li {
+                margin-bottom: 30px;
+            }
+
+            h4 {
+                margin: 20px 0 10px;
+            }
+
+            ul {
+                padding-left: 0;
+            }
+
+            ul > li {
+                list-style-type: none;
+            }
+    body
+        h1 Keep and loose - Page links - !{ domain } (!{ amount })
+        ol
+            each category in categories
+                li
+                    h4 !{ category.name.replace('_', '') }
+                    ul
+                        each link in category.links
+                            li
+                                a(href=link.url, target="_blank") !{ link.url }
