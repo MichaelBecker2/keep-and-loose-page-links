@@ -17,6 +17,9 @@ cd keep-and-loose-page-links
 npm install
 
 # Run the script
+# Make sure that you use a csv file
+# Also check if your csv file has no empty lines, sometimes Excel adds  
+# hundreds of empty lines at the end of the file.
 npm start -- --file  <file-path> --domain <domain>
 # For example
 npm start -- --file ~/Downloads/keep_final_oetker.nl_migration.csv --domain oetker.nl
