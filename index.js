@@ -67,8 +67,8 @@ function write(html) {
             links: allLinks.filter(link => link.category == category)
         }))
         .sort((a, b) => {
-            if (a.category < b.category) return -1
-            if (a.category > b.category) return 1
+            if (a.name < b.name) return -1
+            if (a.name > b.name) return 1
             return 0
         })
 
